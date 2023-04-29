@@ -110,6 +110,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "Klik",
+	owner: "essential",
+	apk: "proprietary/priv-app/Klik/Klik.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "qcrilmsgtunnel",
 	owner: "essential",
 	apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",

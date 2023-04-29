@@ -762,6 +762,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleWCD9335 \
     HotwordEnrollmentTGoogleWCD9335 \
     HotwordEnrollmentXGoogleWCD9335 \
+    Klik \
     qcrilmsgtunnel \
     QtiTelephonyService \
     radioconfig \
