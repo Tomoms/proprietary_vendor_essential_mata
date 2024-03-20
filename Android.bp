@@ -82,6 +82,7 @@ android_app_import {
 	name: "HotwordEnrollmentOKGoogleWCD9335",
 	owner: "essential",
 	apk: "proprietary/priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk",
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -93,6 +94,7 @@ android_app_import {
 	name: "HotwordEnrollmentTGoogleWCD9335",
 	owner: "essential",
 	apk: "proprietary/priv-app/HotwordEnrollmentTGoogleWCD9335/HotwordEnrollmentTGoogleWCD9335.apk",
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -104,6 +106,7 @@ android_app_import {
 	name: "HotwordEnrollmentXGoogleWCD9335",
 	owner: "essential",
 	apk: "proprietary/priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk",
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
