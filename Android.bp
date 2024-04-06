@@ -38,47 +38,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "embms",
-	owner: "essential",
-	apk: "proprietary/app/embms/embms.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "ims",
-	owner: "essential",
-	apk: "proprietary/app/ims/ims.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "uceShimService",
-	owner: "essential",
-	apk: "proprietary/app/uceShimService/uceShimService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "CNEService",
-	owner: "essential",
-	apk: "proprietary/priv-app/CNEService/CNEService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "HotwordEnrollmentOKGoogleWCD9335",
 	owner: "essential",
 	apk: "proprietary/priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk",
@@ -126,20 +85,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "qcrilmsgtunnel",
+	name: "CneApp",
 	owner: "essential",
-	apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "QtiTelephonyService",
-	owner: "essential",
-	apk: "proprietary/vendor/app/QtiTelephonyService/QtiTelephonyService.apk",
+	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -148,9 +96,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "radioconfig",
+	name: "IWlanService",
 	owner: "essential",
-	apk: "proprietary/vendor/app/radioconfig/radioconfig.apk",
+	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -169,42 +117,51 @@ android_app_import {
 	system_ext_specific: true,
 }
 
-dex_import {
-	name: "cneapiclient",
+android_app_import {
+	name: "QtiTelephonyService",
 	owner: "essential",
-	jars: ["proprietary/framework/cneapiclient.jar"],
+	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
 }
 
-dex_import {
-	name: "com.quicinc.cne.api-V1.0-java",
+android_app_import {
+	name: "dpmserviceapp",
 	owner: "essential",
-	jars: ["proprietary/framework/com.quicinc.cne.api-V1.0-java.jar"],
+	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
 }
 
-dex_import {
-	name: "com.quicinc.cne",
+android_app_import {
+	name: "ims",
 	owner: "essential",
-	jars: ["proprietary/framework/com.quicinc.cne.jar"],
+	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
 }
 
-dex_import {
-	name: "embmslibrary",
+android_app_import {
+	name: "qcrilmsgtunnel",
 	owner: "essential",
-	jars: ["proprietary/framework/embmslibrary.jar"],
-}
-
-dex_import {
-	name: "qcrilhook",
-	owner: "essential",
-	jars: ["proprietary/vendor/framework/qcrilhook.jar"],
-	soc_specific: true,
-}
-
-dex_import {
-	name: "qti-vzw-ims-internal",
-	owner: "essential",
-	jars: ["proprietary/vendor/framework/qti-vzw-ims-internal.jar"],
-	soc_specific: true,
+	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
 }
 
 dex_import {
@@ -212,6 +169,27 @@ dex_import {
 	owner: "essential",
 	jars: ["proprietary/product/framework/vendor.essential.hardware.sidecar-V1.0-java.jar"],
 	product_specific: true,
+}
+
+dex_import {
+	name: "com.qti.dpmframework",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "dpmapi",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qcrilhook",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
+	system_ext_specific: true,
 }
 
 prebuilt_etc_xml {
