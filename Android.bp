@@ -8,6 +8,66 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+	name: "libqmi_cci",
+	owner: "essential",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqmi_cci.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqmi_cci.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqmi_common_so",
+	owner: "essential",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqmi_common_so.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqmi_common_so.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqsocket",
+	owner: "essential",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqsocket.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqsocket.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libsdm-disp-vndapis",
 	owner: "essential",
 	strip: {
@@ -198,6 +258,15 @@ prebuilt_etc_xml {
 	src: "proprietary/vendor/etc/lm/ReferenceFeature.xml",
 	filename_from_src: true,
 	sub_dir: "lm",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.qti.gnss@4.0-service",
+	owner: "essential",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
 
