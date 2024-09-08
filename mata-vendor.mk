@@ -863,5 +863,5 @@ PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
-    ReferenceFeature \
-    vendor.qti.gnss@4.0-service
+    ReferenceFeature.xml \
+    vendor.qti.gnss@4.0-service.xml

@@ -253,7 +253,7 @@ dex_import {
 }
 
 prebuilt_etc_xml {
-	name: "ReferenceFeature",
+	name: "ReferenceFeature.xml",
 	owner: "essential",
 	src: "proprietary/vendor/etc/lm/ReferenceFeature.xml",
 	filename_from_src: true,
@@ -262,7 +262,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.gnss@4.0-service",
+	name: "vendor.qti.gnss@4.0-service.xml",
 	owner: "essential",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml",
 	filename_from_src: true,
