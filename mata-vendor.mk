@@ -127,32 +127,30 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
-    libblurbuster \
     libchromaflash \
     libdualcameraddm \
+    libfiltergenerator \
     libhazebuster \
-    libjni_blurbuster \
     libjni_chromaflash \
     libjni_dualcamera \
     libjni_filtergenerator \
     libjni_hazebuster \
-    libjni_makeupV2 \
     libjni_optizoom \
     libjni_seestraight \
-    libjni_sharpshooter \
-    libjni_stillmore \
     libjni_trueportrait \
     libjni_truescanner_v2 \
     libjni_ubifocus \
     liboptizoom \
-    libseemore \
-    libtrueportrait \
-    libubifocus \
     libseestraight \
+    libtrueportrait \
     libtruescanner \
+    libubifocus \
+    libCxAudioHidLib \
     libclearsight \
+    libcxaudiohidlib_embcb_jni \
     libd \
     libjni_clearsight \
+    libusb1.0 \
     eglSubDriverAndroid \
     libEGL_adreno \
     libGLESv1_CM_adreno \
@@ -191,10 +189,10 @@ PRODUCT_PACKAGES += \
     libaudcal \
     libaudioalsa \
     libc2d30_bltlib \
-    libchromaflash \
+    libchromaflash_vendor \
     libdiag \
     libdsutils \
-    libdualcameraddm \
+    libdualcameraddm_vendor \
     libfastrpc_utf_stub \
     libgcs-calwrapper \
     libgcs-ipc \
@@ -219,7 +217,8 @@ PRODUCT_PACKAGES += \
     libmmcamera_faceproc2 \
     libmmcamera_tintless_algo \
     libmmcamera_tintless_bg_pca_algo \
-    liboptizoom \
+    libmmosal_proprietary \
+    liboptizoom_vendor \
     libqcci_legacy \
     libqdi \
     libqdp \
@@ -241,11 +240,11 @@ PRODUCT_PACKAGES += \
     libsns_low_lat_stream_stub \
     libthermalclient \
     libtime_genoff \
-    libtrueportrait \
+    libtrueportrait_vendor \
     libts_detected_face_hal \
     libts_face_beautify_hal \
     libtzdrmgenprov \
-    libubifocus \
+    libubifocus_vendor \
     libvpphvx \
     libvpplibrary \
     sensor_calibrate \
@@ -443,7 +442,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_isp_sce40 \
     libmmcamera_isp_snr47 \
     libmmcamera_isp_sub_module \
-    libmmcamera_llvd \
     libmmcamera_optizoom_lib \
     libmmcamera_paaf_lib \
     libmmcamera_pdaf \
@@ -470,6 +468,8 @@ PRODUCT_PACKAGES += \
     libsmwrapper \
     libvideobokeh \
     libvqzip \
+    libwfdcommonutils_proprietary \
+    libwfdmmservice \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     com.qualcomm.qti.imscmservice@2.0 \
     com.qualcomm.qti.imscmservice@2.1 \
@@ -671,9 +671,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.imsrtpservice@3.0 \
     Score \
-    libCxAudioHidLib \
-    libcxaudiohidlib_embcb_jni \
-    libusb1.0 \
     HotwordEnrollmentOKGoogleWCD9335 \
     HotwordEnrollmentTGoogleWCD9335 \
     HotwordEnrollmentXGoogleWCD9335 \
@@ -735,5 +732,8 @@ PRODUCT_PACKAGES += \
     dpmd
 
 PRODUCT_PACKAGES += \
+    system_app_Score_lib_arm64_libCxAudioHidLib_so \
+    system_app_Score_lib_arm64_libcxaudiohidlib_embcb_jni_so \
+    system_app_Score_lib_arm64_libusb1_0_so \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so

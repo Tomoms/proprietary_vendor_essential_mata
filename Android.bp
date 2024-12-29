@@ -13,46 +13,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "libblurbuster",
-    owner: "essential",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system/lib/libblurbuster.so",
-            ],
-            shared_libs: [
-                "libz",
-                "libdl",
-                "liblog",
-                "libadsprpc",
-                "libm",
-                "libstdc++",
-                "libc",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libblurbuster.so",
-            ],
-            shared_libs: [
-                "libz",
-                "libdl",
-                "liblog",
-                "libadsprpc",
-                "libm",
-                "libstdc++",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libchromaflash",
     owner: "essential",
     strip: {
@@ -129,6 +89,44 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libfiltergenerator",
+    owner: "essential",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/libfiltergenerator.so",
+            ],
+            shared_libs: [
+                "libz",
+                "libdl",
+                "liblog",
+                "libm",
+                "libstdc++",
+                "libc",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libfiltergenerator.so",
+            ],
+            shared_libs: [
+                "libz",
+                "libdl",
+                "liblog",
+                "libm",
+                "libstdc++",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libhazebuster",
     owner: "essential",
     strip: {
@@ -159,46 +157,6 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libstdc++",
                 "libc",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libjni_blurbuster",
-    owner: "essential",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system/lib/libjni_blurbuster.so",
-            ],
-            shared_libs: [
-                "libblurbuster",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libjni_blurbuster.so",
-            ],
-            shared_libs: [
-                "libblurbuster",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -367,44 +325,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libjni_makeupV2",
-    owner: "essential",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system/lib/libjni_makeupV2.so",
-            ],
-            shared_libs: [
-                "libts_face_beautify_hal",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libjni_makeupV2.so",
-            ],
-            shared_libs: [
-                "libts_face_beautify_hal",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libjni_optizoom",
     owner: "essential",
     strip: {
@@ -472,86 +392,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libseestraight",
                 "libjnigraphics",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libjni_sharpshooter",
-    owner: "essential",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system/lib/libjni_sharpshooter.so",
-            ],
-            shared_libs: [
-                "libseemore",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libjni_sharpshooter.so",
-            ],
-            shared_libs: [
-                "libseemore",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libjni_stillmore",
-    owner: "essential",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system/lib/libjni_stillmore.so",
-            ],
-            shared_libs: [
-                "libseemore",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libjni_stillmore.so",
-            ],
-            shared_libs: [
-                "libseemore",
-                "libcutils",
                 "liblog",
                 "libc++",
                 "libc",
@@ -723,7 +563,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libseemore",
+    name: "libseestraight",
     owner: "essential",
     strip: {
         none: true,
@@ -731,13 +571,12 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/system/lib/libseemore.so",
+                "proprietary/system/lib/libseestraight.so",
             ],
             shared_libs: [
                 "libz",
                 "libdl",
                 "liblog",
-                "libadsprpc",
                 "libm",
                 "libstdc++",
                 "libc",
@@ -745,13 +584,12 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/system/lib64/libseemore.so",
+                "proprietary/system/lib64/libseestraight.so",
             ],
             shared_libs: [
                 "libz",
                 "libdl",
                 "liblog",
-                "libadsprpc",
                 "libm",
                 "libstdc++",
                 "libc",
@@ -785,6 +623,44 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/system/lib64/libtrueportrait.so",
+            ],
+            shared_libs: [
+                "libz",
+                "libdl",
+                "liblog",
+                "libm",
+                "libstdc++",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtruescanner",
+    owner: "essential",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/libtruescanner.so",
+            ],
+            shared_libs: [
+                "libz",
+                "libdl",
+                "liblog",
+                "libm",
+                "libstdc++",
+                "libc",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libtruescanner.so",
             ],
             shared_libs: [
                 "libz",
@@ -839,52 +715,27 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libseestraight",
+    name: "libCxAudioHidLib",
     owner: "essential",
     strip: {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/system/lib/libseestraight.so",
+                "proprietary/system/lib64/libCxAudioHidLib.so",
             ],
             shared_libs: [
-                "libz",
-                "libdl",
+                "libusb1.0",
                 "liblog",
-                "libm",
                 "libstdc++",
+                "libm",
                 "libc",
+                "libdl",
             ],
         },
     },
-    compile_multilib: "32",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtruescanner",
-    owner: "essential",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system/lib/libtruescanner.so",
-            ],
-            shared_libs: [
-                "libz",
-                "libdl",
-                "liblog",
-                "libm",
-                "libstdc++",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
 }
 
@@ -906,6 +757,31 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libstdc++",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcxaudiohidlib_embcb_jni",
+    owner: "essential",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libcxaudiohidlib_embcb_jni.so",
+            ],
+            shared_libs: [
+                "libCxAudioHidLib",
+                "liblog",
+                "libstdc++",
+                "libm",
+                "libc",
+                "libdl",
             ],
         },
     },
@@ -952,6 +828,30 @@ cc_prebuilt_library_shared {
                 "libc++",
                 "libc",
                 "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libusb1.0",
+    owner: "essential",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libusb1.0.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libstdc++",
+                "libm",
+                "libc",
                 "libdl",
             ],
         },
@@ -2545,7 +2445,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libchromaflash",
+    name: "libchromaflash_vendor",
+    stem: "libchromaflash",
     owner: "essential",
     strip: {
         none: true,
@@ -2666,7 +2567,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdualcameraddm",
+    name: "libdualcameraddm_vendor",
+    stem: "libdualcameraddm",
     owner: "essential",
     strip: {
         none: true,
@@ -3680,7 +3582,49 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "liboptizoom",
+    name: "libmmosal_proprietary",
+    owner: "essential",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libmmosal_proprietary.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmmosal_proprietary.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liboptizoom_vendor",
+    stem: "liboptizoom",
     owner: "essential",
     strip: {
         none: true,
@@ -4624,7 +4568,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libtrueportrait",
+    name: "libtrueportrait_vendor",
+    stem: "libtrueportrait",
     owner: "essential",
     strip: {
         none: true,
@@ -4780,7 +4725,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libubifocus",
+    name: "libubifocus_vendor",
+    stem: "libubifocus",
     owner: "essential",
     strip: {
         none: true,
@@ -5632,7 +5578,7 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "android.hardware.power@1.2",
                 "libbase",
-                "libdualcameraddm",
+                "libdualcameraddm_vendor",
                 "libhal_dbg",
                 "android.frameworks.displayservice@1.0",
                 "libhidlbase",
@@ -5694,7 +5640,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libmmosal_proprietary",
                 "libutils",
-                "libOmxCore",
                 "libwfdcommonutils_proprietary",
                 "libwfdmmservice",
                 "libbinder",
@@ -8738,7 +8683,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libmmcamera_chromaflash_lib.so",
             ],
             shared_libs: [
-                "libchromaflash",
+                "libchromaflash_vendor",
                 "libcutils",
                 "liblog",
                 "libc++",
@@ -10555,33 +10500,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmcamera_llvd",
-    owner: "essential",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_llvd.so",
-            ],
-            shared_libs: [
-                "libllvd_smore",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmmcamera_optizoom_lib",
     owner: "essential",
     strip: {
@@ -10593,7 +10511,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libmmcamera_optizoom_lib.so",
             ],
             shared_libs: [
-                "liboptizoom",
+                "liboptizoom_vendor",
                 "libcutils",
                 "liblog",
                 "libc++",
@@ -10868,7 +10786,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libmmcamera_trueportrait_lib.so",
             ],
             shared_libs: [
-                "libtrueportrait",
+                "libtrueportrait_vendor",
                 "libcutils",
                 "liblog",
                 "libc++",
@@ -11280,6 +11198,64 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdcommonutils_proprietary",
+    owner: "essential",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libwfdcommonutils_proprietary.so",
+            ],
+            shared_libs: [
+                "libmmosal_proprietary",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libion",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdmmservice",
+    owner: "essential",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libwfdmmservice.so",
+            ],
+            shared_libs: [
+                "libmmosal_proprietary",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder",
                 "libc++",
                 "libc",
                 "libm",
@@ -17210,36 +17186,6 @@ android_app_import {
 }
 
 android_app_import {
-    name: "libCxAudioHidLib",
-    owner: "essential",
-    apk: "proprietary/system/app/Score/lib/arm64/libCxAudioHidLib.so",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-}
-
-android_app_import {
-    name: "libcxaudiohidlib_embcb_jni",
-    owner: "essential",
-    apk: "proprietary/system/app/Score/lib/arm64/libcxaudiohidlib_embcb_jni.so",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-}
-
-android_app_import {
-    name: "libusb1.0",
-    owner: "essential",
-    apk: "proprietary/system/app/Score/lib/arm64/libusb1.0.so",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-}
-
-android_app_import {
     name: "HotwordEnrollmentOKGoogleWCD9335",
     owner: "essential",
     apk: "proprietary/system/priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk",
@@ -18738,6 +18684,24 @@ cc_prebuilt_binary {
     },
     prefer: true,
     system_ext_specific: true,
+}
+
+install_symlink {
+    name: "system_app_Score_lib_arm64_libCxAudioHidLib_so",
+    installed_location: "app/Score/lib/arm64/libCxAudioHidLib.so",
+    symlink_target: "/system/lib64/libCxAudioHidLib.so",
+}
+
+install_symlink {
+    name: "system_app_Score_lib_arm64_libcxaudiohidlib_embcb_jni_so",
+    installed_location: "app/Score/lib/arm64/libcxaudiohidlib_embcb_jni.so",
+    symlink_target: "/system/lib64/libcxaudiohidlib_embcb_jni.so",
+}
+
+install_symlink {
+    name: "system_app_Score_lib_arm64_libusb1_0_so",
+    installed_location: "app/Score/lib/arm64/libusb1.0.so",
+    symlink_target: "/system/lib64/libusb1.0.so",
 }
 
 install_symlink {
