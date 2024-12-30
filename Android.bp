@@ -5354,7 +5354,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0_vendor.so",
             ],
             shared_libs: [
-                "libhidlbase",
+                "libhidlbase-v32",
                 "libhidltransport",
                 "libhwbinder",
                 "liblog",
@@ -5371,7 +5371,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0_vendor.so",
             ],
             shared_libs: [
-                "libhidlbase",
+                "libhidlbase-v32",
                 "libhidltransport",
                 "libhwbinder",
                 "liblog",
@@ -5460,7 +5460,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/vendor.qti.hardware.improvetouch.gesturemanager@1.0_vendor.so",
             ],
             shared_libs: [
-                "libhidlbase",
+                "libhidlbase-v32",
                 "libhidltransport",
                 "libhwbinder",
                 "liblog",
@@ -5477,7 +5477,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.qti.hardware.improvetouch.gesturemanager@1.0_vendor.so",
             ],
             shared_libs: [
-                "libhidlbase",
+                "libhidlbase-v32",
                 "libhidltransport",
                 "libhwbinder",
                 "liblog",
@@ -5566,7 +5566,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0_vendor.so",
             ],
             shared_libs: [
-                "libhidlbase",
+                "libhidlbase-v32",
                 "libhidltransport",
                 "libhwbinder",
                 "liblog",
