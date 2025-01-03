@@ -4297,7 +4297,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libsdm-disp-vndapis.so",
             ],
             shared_libs: [
-                "libsdmutils",
                 "libqservice",
                 "libbinder",
                 "libcutils",
@@ -4314,7 +4313,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsdm-disp-vndapis.so",
             ],
             shared_libs: [
-                "libsdmutils",
                 "libqservice",
                 "libbinder",
                 "libcutils",
@@ -4328,6 +4326,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -13856,7 +13855,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libdrm",
-                "libdrmutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -13865,6 +13863,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -13885,7 +13884,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libbinder",
                 "libutils",
-                "libsdmutils",
                 "libtinyxml2_1",
                 "libc++",
                 "libc",
@@ -13895,6 +13893,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -13912,7 +13911,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libdiag",
-                "libsdmutils",
                 "libbinder",
                 "libc++",
                 "libc",
@@ -13922,6 +13920,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -13938,7 +13937,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsdmextension.so",
             ],
             shared_libs: [
-                "libsdmutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -13947,6 +13945,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
