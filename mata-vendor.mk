@@ -162,22 +162,9 @@ PRODUCT_PACKAGES += \
     keystore.msm8998 \
     sound_trigger.primary.msm8998 \
     vendor.essential.hardware.sidecar@1.0-impl \
-    libAlacSwDec \
-    libApeSwDec \
     libC2D2 \
     libCB \
-    libFlacSwDec \
-    libOmxAacDec \
-    libOmxAlacDec \
-    libOmxAlacDecSw \
-    libOmxAmrDec \
-    libOmxAmrwbplusDec \
-    libOmxApeDec \
-    libOmxApeDecSw \
-    libOmxEvrcDec \
-    libOmxQcelp13Dec \
     libOmxVpp \
-    libOmxWmaDec \
     libOpenCL \
     libQSEEComAPI \
     libacdb-fts \
@@ -264,7 +251,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.improvetouch.touchcompanion@1.0-service \
     vendor.qti.hardware.improvetouch.touchcompanion@1.0_vendor \
     camera.msm8998 \
-    libOmxDsdDec \
     libOmxVideoDSMode \
     libactuator_ak7371 \
     libactuator_ak7371_mono \
