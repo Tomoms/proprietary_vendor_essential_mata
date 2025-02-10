@@ -251,7 +251,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.improvetouch.touchcompanion@1.0-service \
     vendor.qti.hardware.improvetouch.touchcompanion@1.0_vendor \
     camera.msm8998 \
-    libOmxVideoDSMode \
     libactuator_ak7371 \
     libactuator_ak7371_mono \
     libactuator_bu64297 \
