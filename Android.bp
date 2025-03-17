@@ -16727,8 +16727,7 @@ android_app_import {
     name: "Score",
     owner: "essential",
     apk: "proprietary/system/app/Score/Score.apk",
-    preprocessed: true,
-    presigned: true,
+    certificate: "platform",
     dex_preopt: {
         enabled: false,
     },
