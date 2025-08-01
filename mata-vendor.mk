@@ -157,8 +157,6 @@ PRODUCT_PACKAGES += \
     libQTapGLES \
     libq3dtools_adreno \
     libq3dtools_esx \
-    gatekeeper.msm8998 \
-    keystore.msm8998 \
     sound_trigger.primary.msm8998 \
     vendor.essential.hardware.sidecar@1.0-impl \
     libC2D2 \
@@ -463,6 +461,8 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.1 \
     com.qualcomm.qti.uceservice@2.2 \
     com.qualcomm.qti.uceservice@2.3 \
+    gatekeeper.msm8998 \
+    keystore.msm8998 \
     vendor.qti.gnss@4.0-impl \
     vendor.qti.hardware.alarm@1.0-impl \
     vendor.qti.hardware.qccvndhal@1.0-impl \
