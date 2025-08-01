@@ -17758,33 +17758,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "port-bridge",
-    owner: "essential",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/port-bridge",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "libdsutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "power_off_alarm",
     owner: "essential",
     target: {
