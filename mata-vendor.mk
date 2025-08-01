@@ -75,7 +75,7 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor/etc/hbtp/loader.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/loader.cfg \
     vendor/essential/mata/proprietary/vendor/etc/hbtp/qtc800s_dsp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/qtc800s_dsp.bin \
     vendor/essential/mata/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.mata.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.mata.rc \
-    vendor/essential/mata/proprietary/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.2-service.widevine.rc \
+    vendor/essential/mata/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/essential/mata/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/essential/mata/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/essential/mata/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
@@ -453,6 +453,7 @@ PRODUCT_PACKAGES += \
     libvqzip \
     libwfdcommonutils_proprietary \
     libwfdmmservice \
+    libwvaidl \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     com.qualcomm.qti.imscmservice@2.0 \
     com.qualcomm.qti.imscmservice@2.1 \
@@ -548,7 +549,6 @@ PRODUCT_PACKAGES += \
     libtinyxml2_1 \
     libwms \
     libwqe \
-    libwvhidl \
     libxml \
     libxtadapter \
     libxtwifi_server_protocol \
@@ -673,6 +673,7 @@ PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
+    manifest_android.hardware.drm-service.widevine.xml \
     vendor.qti.gnss@4.0-service.xml \
     fastboot_target \
     adpl \
@@ -684,7 +685,7 @@ PRODUCT_PACKAGES += \
     hbtp_daemon \
     hvdcp_opti \
     android.hardware.biometrics.fingerprint@2.1-service.mata \
-    android.hardware.drm@1.2-service.widevine \
+    android.hardware.drm-service.widevine \
     qcrild \
     vendor.essential.hardware.sidecar@1.0-service \
     vendor.qti.hardware.alarm@1.0-service \
