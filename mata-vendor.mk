@@ -155,7 +155,6 @@ PRODUCT_PACKAGES += \
     libQTapGLES \
     libq3dtools_adreno \
     libq3dtools_esx \
-    sound_trigger.primary.msm8998 \
     vendor.essential.hardware.sidecar@1.0-impl \
     libC2D2 \
     libCB \
