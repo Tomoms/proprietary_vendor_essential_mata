@@ -621,18 +621,18 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0_vendor \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
-    libFastRPC_UTF_Forward_Qtc2_skel \
-    libFastRPC_UTF_Forward_skel \
-    libadsp_fd_skel \
-    libadsp_hvx_add_constant \
-    libadsp_hvx_skel \
-    libhvxMathVIO \
-    libscveBlobDescriptor_skel \
-    libscveFaceLandmark_skel \
-    libscveT2T_skel \
-    libsns_low_lat_stream_skel \
-    libvpp_frc \
-    libvpp_svc_skel \
+    vendor_lib_rfsa_adsp_libFastRPC_UTF_Forward_Qtc2_skel_so \
+    vendor_lib_rfsa_adsp_libFastRPC_UTF_Forward_skel_so \
+    vendor_lib_rfsa_adsp_libadsp_fd_skel_so \
+    vendor_lib_rfsa_adsp_libadsp_hvx_add_constant_so \
+    vendor_lib_rfsa_adsp_libadsp_hvx_skel_so \
+    vendor_lib_rfsa_adsp_libhvxMathVIO_so \
+    vendor_lib_rfsa_adsp_libscveBlobDescriptor_skel_so \
+    vendor_lib_rfsa_adsp_libscveFaceLandmark_skel_so \
+    vendor_lib_rfsa_adsp_libscveT2T_skel_so \
+    vendor_lib_rfsa_adsp_libsns_low_lat_stream_skel_so \
+    vendor_lib_rfsa_adsp_libvpp_frc_so \
+    vendor_lib_rfsa_adsp_libvpp_svc_skel_so \
     com.qualcomm.qti.dpm.api@1.0 \
     lib-imscamera \
     lib-imsvideocodec \

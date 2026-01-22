@@ -15847,7 +15847,7 @@ cc_prebuilt_library_shared {
 }
 
 prebuilt_rfsa {
-    name: "libFastRPC_UTF_Forward_Qtc2_skel",
+    name: "vendor_lib_rfsa_adsp_libFastRPC_UTF_Forward_Qtc2_skel_so",
     filename: "libFastRPC_UTF_Forward_Qtc2_skel.so",
     owner: "essential",
     src: "proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so",
@@ -15856,7 +15856,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libFastRPC_UTF_Forward_skel",
+    name: "vendor_lib_rfsa_adsp_libFastRPC_UTF_Forward_skel_so",
     filename: "libFastRPC_UTF_Forward_skel.so",
     owner: "essential",
     src: "proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so",
@@ -15865,7 +15865,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libadsp_fd_skel",
+    name: "vendor_lib_rfsa_adsp_libadsp_fd_skel_so",
     filename: "libadsp_fd_skel.so",
     owner: "essential",
     src: "proprietary/vendor/lib/rfsa/adsp/libadsp_fd_skel.so",
@@ -15874,7 +15874,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libadsp_hvx_add_constant",
+    name: "vendor_lib_rfsa_adsp_libadsp_hvx_add_constant_so",
     filename: "libadsp_hvx_add_constant.so",
     owner: "essential",
     src: "proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so",
@@ -15883,7 +15883,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libadsp_hvx_skel",
+    name: "vendor_lib_rfsa_adsp_libadsp_hvx_skel_so",
     filename: "libadsp_hvx_skel.so",
     owner: "essential",
     src: "proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_skel.so",
@@ -15892,7 +15892,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libhvxMathVIO",
+    name: "vendor_lib_rfsa_adsp_libhvxMathVIO_so",
     filename: "libhvxMathVIO.so",
     owner: "essential",
     src: "proprietary/vendor/lib/rfsa/adsp/libhvxMathVIO.so",
@@ -15901,7 +15901,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libscveBlobDescriptor_skel",
+    name: "vendor_lib_rfsa_adsp_libscveBlobDescriptor_skel_so",
     filename: "libscveBlobDescriptor_skel.so",
     owner: "essential",
     src: "proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so",
@@ -15910,7 +15910,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libscveFaceLandmark_skel",
+    name: "vendor_lib_rfsa_adsp_libscveFaceLandmark_skel_so",
     filename: "libscveFaceLandmark_skel.so",
     owner: "essential",
     src: "proprietary/vendor/lib/rfsa/adsp/libscveFaceLandmark_skel.so",
@@ -15919,7 +15919,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libscveT2T_skel",
+    name: "vendor_lib_rfsa_adsp_libscveT2T_skel_so",
     filename: "libscveT2T_skel.so",
     owner: "essential",
     src: "proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so",
@@ -15928,7 +15928,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libsns_low_lat_stream_skel",
+    name: "vendor_lib_rfsa_adsp_libsns_low_lat_stream_skel_so",
     filename: "libsns_low_lat_stream_skel.so",
     owner: "essential",
     src: "proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so",
@@ -15937,7 +15937,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libvpp_frc",
+    name: "vendor_lib_rfsa_adsp_libvpp_frc_so",
     filename: "libvpp_frc.so",
     owner: "essential",
     src: "proprietary/vendor/lib/rfsa/adsp/libvpp_frc.so",
@@ -15946,7 +15946,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libvpp_svc_skel",
+    name: "vendor_lib_rfsa_adsp_libvpp_svc_skel_so",
     filename: "libvpp_svc_skel.so",
     owner: "essential",
     src: "proprietary/vendor/lib/rfsa/adsp/libvpp_svc_skel.so",
