@@ -719,4 +719,16 @@ PRODUCT_PACKAGES += \
     system_app_Score_lib_arm64_libcxaudiohidlib_embcb_jni_so \
     system_app_Score_lib_arm64_libusb1_0_so \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
-    system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so
+    system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
+    vendor_lib_eglSubDriverAndroid_so \
+    vendor_lib_libEGL_adreno_so \
+    vendor_lib_libGLESv1_CM_adreno_so \
+    vendor_lib_libGLESv2_adreno_so \
+    vendor_lib_libq3dtools_adreno_so \
+    vendor_lib_libq3dtools_esx_so \
+    vendor_lib64_eglSubDriverAndroid_so \
+    vendor_lib64_libEGL_adreno_so \
+    vendor_lib64_libGLESv1_CM_adreno_so \
+    vendor_lib64_libGLESv2_adreno_so \
+    vendor_lib64_libq3dtools_adreno_so \
+    vendor_lib64_libq3dtools_esx_so
