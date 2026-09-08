@@ -708,7 +708,6 @@ PRODUCT_PACKAGES += \
     sensors.qcom \
     tftp_server \
     thermal-engine \
-    wcnss_filter \
     xtra-daemon \
     xtwifi-client \
     xtwifi-inet-agent \
