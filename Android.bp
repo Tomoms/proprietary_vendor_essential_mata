@@ -4997,7 +4997,7 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libdualcameraddm_vendor",
                 "libhal_dbg",
-                "android.frameworks.displayservice@1.0",
+                "lineage.frameworks.displayservice@1.0",
                 "libhidlbase",
                 "libhidltransport",
                 "libts_face_beautify_hal",
